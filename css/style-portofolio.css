@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    background-color: #131313;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+
+.logo {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li a {
+    margin: 0px 30px;
+    color: #c9c9c9;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    transition: all ease 0.3s;
+}
+
+.nav-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-social a {
+    color: #c9c9c9;
+    margin-left: 20px;
+    transition: all ease 0.3s;
+}
+
+.nav-social a:first-child {
+    margin-left: 0px;
+}
+
+.menu li a:hover,
+.nav-social a:hover {
+    color: #ffffff;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.main-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.main-content span {
+    color: #8d94b4;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.main-content strong {
+    color: #f9f9f9;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    line-height: 3.4rem;
+    margin-top: 20px;
+}
+
+.main-content p {
+    color: #5e5e5e;
+    margin-top: 20px;
+    letter-spacing: 0.3px;
+}

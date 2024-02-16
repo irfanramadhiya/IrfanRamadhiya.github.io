@@ -1,0 +1,363 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: #f8f8f8;
+}
+
+#home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    background-color: #131313;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+
+.logo {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li a {
+    margin: 0px 30px;
+    color: #c9c9c9;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    transition: all ease 0.3s;
+}
+
+.nav-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-social a {
+    color: #c9c9c9;
+    margin-left: 20px;
+    transition: all ease 0.3s;
+}
+
+.nav-social a:first-child {
+    margin-left: 0px;
+}
+
+.menu li a:hover,
+.nav-social a:hover {
+    color: #ffffff;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.home-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.home-content span {
+    color: #8d94b4;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.home-content strong {
+    color: #f9f9f9;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    line-height: 3.4rem;
+    margin-top: 20px;
+}
+
+.home-content p {
+    color: #5e5e5e;
+    margin-top: 20px;
+    letter-spacing: 0.3px;
+}
+
+.home-content a {
+    margin-top: 20px;
+    width: 180px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9b9b9b;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.home-content a i {
+    margin-left: 10px;
+}
+
+.menu-icon,
+.menu-btn {
+    display: none;
+}
+
+@media(max-width: 1000px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navigation {
+        justify-content: space-between;
+        padding: 20px;
+        position: relative;
+        width: 100%;
+        z-index: 103;
+    }
+
+    .navigation .menu {
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 100%;
+        background-color: #131313;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 2px 30px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .navigation .menu li {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navigation .menu li a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0px;
+        padding: 20px;
+        border-bottom: 1px solid #161616;
+    }
+
+    .logo {
+        margin-left: 20px;
+        margin-right: auto;
+    }
+
+    .navigation .menu-icon {
+        cursor: pointer;
+        float: right;
+        padding: 10px 0px;
+        position: relative;
+        user-select: none;
+        z-index: 106;
+    }
+
+    .navigation .menu-icon .nav-icon {
+        background-color: #ffffff;
+        display: block;
+        position: relative;
+        height: 2px;
+        width: 25px;
+        transition: background 0.2s ease-out;
+    }
+
+    .navigation .menu-icon .nav-icon::before,
+    .navigation .menu-icon .nav-icon::after {
+        background-color: #ffffff;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: all ease-out 0.2s;
+    }
+
+    .navigation .menu-icon .nav-icon::before {
+        top: 9px;
+    }
+
+    .navigation .menu-icon .nav-icon::after {
+        top: -9px;
+    }
+
+    .navigation .menu-btn:checked~.menu-icon .nav-icon {
+        background-color: transparent;
+    }
+
+    .navigation .menu-btn:checked~.menu-icon .nav-icon::before {
+        transform: rotate(-45deg);
+        top: 0px;
+    }
+
+    .navigation .menu-btn:checked~.menu-icon .nav-icon::after {
+        transform: rotate(45deg);
+        top: 0px;
+    }
+
+    .navigation .menu-btn:checked~.menu {
+        display: block;
+    }
+}
+
+@media(max-width: 724px) {
+    .home-content h1 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        max-width: 80%;
+        letter-spacing: 0.3px;
+    }
+
+    .home-content p {
+        max-width: 90%;
+    }
+}
+
+#portofolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.portofolio-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portofolio-heading span {
+    color: #f33c3c;
+}
+
+.portofolio-heading h3 {
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+.portofolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.portofolio-box {
+    width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+
+.portofolio-img {
+    width: 100%;
+    height: auto;
+}
+
+.portofolio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.portofolio-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portofolio-text span {
+    color: #f33c3c;
+    font-size: 0.9rem;
+}
+
+.portofolio-text .portofolio-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+
+.portofolio-text .portofolio-title:hover {
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}
+
+.portofolio-text p {
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+
+.portofolio-text a {
+    color: #0f0f0f;
+}
+
+.portofolio-text a:hover {
+    color: #f33c3c;
+    transition: all ease 0.3s;
+}

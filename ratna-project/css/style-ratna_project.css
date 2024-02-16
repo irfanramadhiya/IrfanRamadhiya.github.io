@@ -1,0 +1,366 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20%;
+}
+
+.main-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.main-heading span {
+    color: #9b9b9b;
+}
+
+.main-heading h3 {
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+    margin-bottom: 30px;
+}
+
+.main-img img {
+    width: 100%;
+    height: 100%;
+    max-height: 800px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-text p {
+    color: #2b2b2b;
+    font-size: 1.2rem;
+    margin: 30px 0px;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links a {
+    margin-top: 20px;
+    width: 180px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9b9b9b;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.links a i {
+    margin-left: 10px;
+}
+
+.detail-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detail-section span {
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+#skill_slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 60%;
+    margin: auto;
+    margin: 0px 20%;
+    margin-top: 0px;
+}
+
+.skill-box {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.skill-box-img {
+    width: 230px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative;
+}
+
+.skill-box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.skill-box-img::before,
+.skill-box-img::after {
+    content: '';
+    position: absolute;
+    left: -12%;
+    top: 12%;
+    width: 300px;
+    height: 230px;
+    border: 2px solid #e7e7e7;
+    border-radius: 50%;
+    z-index: -1;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.skill-box-img::after {
+    border: 2px solid #1295d1c0;
+    animation-name: rotate2;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.skill-box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-box-text p {
+    color: #333333;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.skill-box-text span {
+    color: #535353;
+    font-weight: 600;
+}
+
+.mySwiper {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.swiper-pagination {
+    position: static !important;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.swiper-pagination-progressbar-fill {
+    background-color: #2b2b2b !important;
+}
+
+.swiper-pagination-progressbar {
+    background-color: #e2e2e2 !important;
+    height: 3px !important;
+    border-radius: 4px !important;
+}
+
+#screenshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.screenshot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.screenshot-box {
+    width: 400px;
+    background-color: #f8f8f8;
+    margin: 20px;
+}
+
+.screenshot-img {
+    width: 100%;
+    height: auto;
+}
+
+.screenshot-img a {
+    margin-top: 20px;
+    width: 180px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9b9b9b;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.screenshot-img a i {
+    margin-left: 10px;
+}
+
+.screenshot-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media(max-width: 930px) {
+    .links {
+        flex-direction: column;
+    }
+
+    .main-text p {
+        margin-bottom: 0px;
+    }
+}
+
+@media(max-width:415px) {
+    #main {
+        padding: 30px 13px;
+    }
+
+    .main-heading h3 {
+        font-size: 1.8rem;
+    }
+
+    .skill-box-img {
+        width: 80%;
+        height: 300px;
+    }
+
+    .skill-box-img::after,
+    .skill-box-img::before {
+        width: 90%;
+        height: 300px;
+        top: 0%;
+        left: 5%;
+    }
+
+    #skill_slider {
+        width: 80%;
+        margin: 0px 10%;
+    }
+
+    #screenshot {
+        margin: 0px 13px;
+    }
+
+    .screenshot-box {
+        width: 100%;
+    }
+}
+
+@media(max-width:330px) {
+    #main {
+        padding: 30px 13px;
+    }
+
+    .main-heading h3 {
+        font-size: 1.8rem;
+    }
+
+    .skill-box-img {
+        height: 250px;
+    }
+
+    .skill-box-img::after,
+    .skill-box-img::before {
+        height: 250px;
+    }
+
+    #skill_slider {
+        width: 80%;
+        margin: 0px 10%;
+    }
+
+    #screenshot {
+        margin: 0px 13px;
+    }
+
+    .screenshot-box {
+        width: 100%;
+    }
+}

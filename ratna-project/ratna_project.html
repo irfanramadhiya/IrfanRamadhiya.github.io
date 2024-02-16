@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_Ratna</title>
+    <link rel="stylesheet" href="css/style-ratna_project.css">
+    <link rel="shortcut icon" href="images/ratna_project_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <section id="main">
+        <div class="main-heading">
+            <h3>Project_Ratna</h3>
+            <span>PC Game / 2020</span>
+        </div>
+        <div class="main-img">
+            <img src="../images/banners/ratna_project-banner.jpg" alt="Banner">
+        </div>
+        <div class="detail-section">
+            <span>About This Project</span>
+        </div>
+        <div class="main-text">
+            <p>Project_Ratna is a <b>2D platformer game</b> for PC that was made as an assignment for <b>BINUS Game
+                    Development Club (BGDC)</b>, one of the main uniqueness of this game is that players can <b>reverse
+                    the gravity</b> of the main
+                character to solve challenging puzzles, this game demo was made by 5 people: Me along with another
+                person as
+                <b>programmers</b> who's in charge
+                of programming the game, a <b>game designer</b> who's in charge of the game's ideas and
+                development, an <b>art designer</b> who's in charge of making the pixel arts for the game, and a
+                <b>sound designer</b>
+                who's in charge of handling background music and sound fx.
+            </p>
+        </div>
+        <div class="links">
+            <a href="https://github.com/irfanramadhiya/Project_Ratna" target="_blank">Open Github Repo <i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://drive.google.com/file/d/1mIxFijygG-Od_6uIZ-4iqNTYFL8zUhdO/view?usp=sharing"
+                target="_blank">Download Demo <i class="fa-solid fa-download"></i></a>
+            <a href="https://dnrzevo.itch.io/project-ratna" target="_blank">Development Log
+                <i class="fa fa-book"></i></a>
+        </div>
+    </section>
+    <section id="skill_slider">
+        <div class="detail-section">
+            <span>Skills Used</span>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="skill-box">
+                        <div class="skill-box-img">
+                            <img src="../images/skills/unity.png" alt="software">
+                        </div>
+                        <div class="skill-box-text">
+                            <p>Software</p>
+                            <span>Unity</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="skill-box">
+                        <div class="skill-box-img">
+                            <img src="../images/skills/csharp.png" alt="language">
+                        </div>
+                        <div class="skill-box-text">
+                            <p>Language</p>
+                            <span>C#</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="skill-box">
+                        <div class="skill-box-img">
+                            <img src="../images/skills/github.png" alt="Repository">
+                        </div>
+                        <div class="skill-box-text">
+                            <p>Repository</p>
+                            <span>Github</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section id="screenshot">
+        <div class="detail-section">
+            <span>Screenshots</span>
+        </div>
+        <div class="screenshot-container">
+            <div class="screenshot-box">
+                <div class="screenshot-img">
+                    <img src="images/ratna_project-ss-1.jpg" alt="screenshot">
+                </div>
+            </div>
+            <div class="screenshot-box">
+                <div class="screenshot-img">
+                    <img src="images/ratna_project-ss-2.jpg" alt="screenshot">
+                </div>
+            </div>
+            <div class="screenshot-box">
+                <div class="screenshot-img">
+                    <img src="images/ratna_project-ss-3.jpg" alt="screenshot">
+                </div>
+            </div>
+            <div class="screenshot-box">
+                <div class="screenshot-img">
+                    <img src="images/ratna_project-ss-4.jpg" alt="screenshot">
+                </div>
+            </div>
+            <div class="screenshot-box">
+                <div class="screenshot-img">
+                    <img src="images/ratna_project-ss-5.jpg" alt="screenshot">
+                </div>
+            </div>
+            <div class="screenshot-box">
+                <div class="screenshot-img">
+                    <img src="images/ratna_project-ss-6.jpg" alt="screenshot">
+                </div>
+            </div>
+            <div class="screenshot-box">
+                <div class="screenshot-img">
+                    <img src="images/ratna_project-ss-7.jpg" alt="screenshot">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                810: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1250: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
